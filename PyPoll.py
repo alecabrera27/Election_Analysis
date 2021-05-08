@@ -46,7 +46,9 @@ with open(file_to_save, "w") as txt_file:
     print(election_results, end="")
     # Save the final vote count to the text file.
     txt_file.write(election_results)
+    
     for candidate_name in candidate_votes:
+
         # Retrieve vote count and percentage.
         votes = candidate_votes[candidate_name]
         vote_percentage = float(votes) / float(total_votes) * 100
