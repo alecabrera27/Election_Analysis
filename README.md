@@ -90,4 +90,13 @@ and a percentage of *73.8%*
 ---
 # Election-Audit Summary
 
-
+With this code we were able to count votes, find the winner candidate and county with most votes, and their percentages.
+For upcoming elections, whether congressional or state, we could modify the code so we could input the name of the file to count votes, to facilitate the count of votes on different elections.
+It could seem something like: 
+```
+#Insert the name of the file we want to analyze 
+file_to_open = input("What is the name of the file to analyze?")
+# Add a variable to load a file from a path.
+file_to_load = os.path.join("Resources", file_to_open)
+```
+Also, if the information is given, we could have the percentage of total voters vs the total of registered voters, to make futher analysis on the elections and have more votes on each county. 
